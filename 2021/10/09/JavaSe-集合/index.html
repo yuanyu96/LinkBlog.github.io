@@ -26,18 +26,18 @@
 <meta property="og:description" content="数组和集合比较数组不是面向对象的，存在明显的缺陷，集合弥补了数组的缺点，比数组更灵活更实用，而且不同的集合框架类可适用不同场合。如下：  数组能存放基本数据类型和对象，而集合类存放的都是对象，集合类不能存放基本数据类型。数组和集合存放的对象皆为对象的引用地址。 数组容易固定无法动态改变，集合类容量动态改变。 数组无法判断其中实际存有多少元素，length只告诉了数组的容量，而集合的size()可以">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E6%95%B0%E7%BB%84.png">
-<meta property="og:image" content="https://yuanyu96.github.io/JavaSe-%E9%9B%86%E5%90%88/%E6%A1%86%E6%9E%B6%E5%9B%BE.gif">
-<meta property="og:image" content="https://yuanyu96.github.io/JavaSe-%E9%9B%86%E5%90%88/%E4%BD%93%E7%B3%BB.png">
-<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%5CJavaSe-%E9%9B%86%E5%90%88%5C%E4%BD%93%E7%B3%BB2.jpg">
-<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%5CJavaSe-%E9%9B%86%E5%90%88%5Ccollection.png">
-<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5Clist1.png">
-<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%5CJavaSe-%E9%9B%86%E5%90%88%5ClistSet.png">
-<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5Clist2.png">
-<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5CMap1.png">
-<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5Cmap2.png">
-<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5Cmap3.png">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/框架图.gif">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%E4%BD%93%E7%B3%BB.png">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%E4%BD%93%E7%B3%BB2.jpg">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/collection.png">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/list1.png">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/listSet.png">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/list2.png">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/Map1.png">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/map2.png">
+<meta property="og:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/map3.png">
 <meta property="article:published_time" content="2021-10-09T06:34:30.000Z">
-<meta property="article:modified_time" content="2021-10-09T10:22:28.083Z">
+<meta property="article:modified_time" content="2021-10-09T10:25:11.265Z">
 <meta property="article:author" content="yuanyu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://yuanyu96.github.io/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E6%95%B0%E7%BB%84.png">
@@ -385,7 +385,8 @@
 <li>集合以类的形式存在，具有封装、继承、多态等类的特性，通过简单的方法和属性即可实现各种复杂操作，大大提高了软件的开发效率</li>
 </ol>
 <p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%E9%9B%86%E5%90%88%E6%95%B0%E7%BB%84.png"></p>
-<h3 id="JAVA-集合框架"><a href="#JAVA-集合框架" class="headerlink" title="JAVA 集合框架"></a>JAVA 集合框架</h3><p><img src="/JavaSe-%E9%9B%86%E5%90%88/%E6%A1%86%E6%9E%B6%E5%9B%BE.gif"></p>
+<h3 id="JAVA-集合框架"><a href="#JAVA-集合框架" class="headerlink" title="JAVA 集合框架"></a>JAVA 集合框架</h3><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/框架图.gif">
+
 <p>从上面的集合框架图可以看到，Java 集合框架主要包括两种类型的容器，一种是集合（Collection），存储一个元素集合，另一种是图（Map），存储键/值对映射。Collection 接口又有 3 种子类型，List、Set 和 Queue，再下面是一些抽象类，最后是具体实现类，常用的有 ArrayList、LinkedList、HashSet、LinkedHashSet、HashMap、LinkedHashMap 等等。</p>
 <p>集合框架是一个用来代表和操纵集合的统一架构。所有的集合框架都包含如下内容：</p>
 <ul>
@@ -397,17 +398,17 @@
 </li>
 </ul>
 <p>除了集合，该框架也定义了几个 Map 接口和类。Map 里存储的是键/值对。尽管 Map 不是集合，但是它们完全整合在集合中。</p>
-<p><img src="/JavaSe-%E9%9B%86%E5%90%88/%E4%BD%93%E7%B3%BB.png"></p>
+<p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%E4%BD%93%E7%B3%BB.png"></p>
 <p>Java 集合框架提供了一套性能优良，使用方便的接口和类，java集合框架位于<strong>java.util</strong>包中</p>
-<p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%5CJavaSe-%E9%9B%86%E5%90%88%5C%E4%BD%93%E7%B3%BB2.jpg"></p>
+<p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%E4%BD%93%E7%B3%BB2.jpg"></p>
 <p>Collection 接口的接口 对象的集合（单列集合）<br>├——-List 接口：元素按进入先后有序保存，可重复<br>│—————-├ LinkedList 接口实现类， 链表， 插入删除， 没有同步， 线程不安全<br>│—————-├ ArrayList 接口实现类， 数组， 随机访问， 没有同步， 线程不安全<br>│—————-└ Vector 接口实现类 数组， 同步， 线程安全<br>│ ———————-└ Stack 是Vector类的实现类<br>└——-Set 接口： 仅接收一次，不可重复，并做内部排序<br>├—————-└HashSet 使用hash表（数组）存储元素<br>│————————└ LinkedHashSet 链表维护元素的插入次序<br>└ —————-TreeSet 底层实现为二叉树，元素排好序</p>
 <p>Map 接口 键值对的集合 （双列集合）<br>├———Hashtable 接口实现类， 同步， 线程安全<br>├———HashMap 接口实现类 ，没有同步， 线程不安全-<br>│—————–├ LinkedHashMap 双向链表和哈希表实现<br>│—————–└ WeakHashMap<br>├ ——–TreeMap 红黑树对所有的key进行排序<br>└———IdentifyHashMap</p>
-<h4 id="一-Collection接口"><a href="#一-Collection接口" class="headerlink" title="一.Collection接口"></a>一.Collection接口</h4><p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%5CJavaSe-%E9%9B%86%E5%90%88%5Ccollection.png"></p>
+<h4 id="一-Collection接口"><a href="#一-Collection接口" class="headerlink" title="一.Collection接口"></a>一.Collection接口</h4><p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/collection.png"></p>
 <h5 id="collection的子接口"><a href="#collection的子接口" class="headerlink" title="collection的子接口"></a><strong>collection的子接口</strong></h5><p>List:接口—实现类： LinkedList,Vector,ArrayList</p>
 <p>Set:接口 —实现类： HashSet、LinkedHashSet</p>
 <p>​            Set的子接口SortedSet接口—实现类：TreeSet</p>
-<p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5Clist1.png"></p>
-<h5 id="1、List集合"><a href="#1、List集合" class="headerlink" title="1、List集合"></a><strong>1、List集合</strong></h5><p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/%5CJavaSe-%E9%9B%86%E5%90%88%5ClistSet.png"></p>
+<p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/list1.png"></p>
+<h5 id="1、List集合"><a href="#1、List集合" class="headerlink" title="1、List集合"></a><strong>1、List集合</strong></h5><p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/listSet.png"></p>
 <p>有序列表，允许存放重复的元素；<br>实现类：</p>
 <ul>
 <li>ArrayList：数组实现，查询快，增删慢，轻量级；(线程不安全)</li>
@@ -496,12 +497,12 @@
 
 <p><strong>总结：无论使用自然排序还是定制排序，都可以通过自定义比较逻辑实现各种各样的排序方式。</strong></p>
 <p><strong>下图总结一下List和Set的使用</strong></p>
-<p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5Clist2.png"></p>
+<p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/list2.png"></p>
 <h4 id="二-Map接口"><a href="#二-Map接口" class="headerlink" title="二.Map接口"></a>二.Map接口</h4><p>Map用于保存具有映射关系的数据，Map里保存着两组数据：key和value，它们都可以使任何引用类型的数据，但key不能重复。所以通过指定的key就可以取出对应的value。</p>
 <p><strong>请注意！！！</strong>， Map 没有继承 Collection 接口</p>
-<p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5CMap1.png"></p>
-<h6 id="HashMap和HashTable"><a href="#HashMap和HashTable" class="headerlink" title="HashMap和HashTable"></a>HashMap和HashTable</h6><p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5Cmap2.png"></p>
-<h6 id="TreeMap"><a href="#TreeMap" class="headerlink" title="TreeMap"></a>TreeMap</h6><p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/JavaSe-%E9%9B%86%E5%90%88%5Cmap3.png"></p>
+<p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/Map1.png"></p>
+<h6 id="HashMap和HashTable"><a href="#HashMap和HashTable" class="headerlink" title="HashMap和HashTable"></a>HashMap和HashTable</h6><p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/map2.png"></p>
+<h6 id="TreeMap"><a href="#TreeMap" class="headerlink" title="TreeMap"></a>TreeMap</h6><p><img src="/2021/10/09/JavaSe-%E9%9B%86%E5%90%88/map3.png"></p>
 <p><strong>小结：</strong><br>HashMap 非线程安全<br>HashMap：基于哈希表实现。使用HashMap要求添加的键类明确定义了hashCode()和equals()[可以重写hashCode()和equals()]，为了优化HashMap空间的使用，您可以调优初始容量和负载因子。</p>
 <p>TreeMap：非线程安全基于红黑树实现。TreeMap没有调优选项，因为该树总处于平衡状态。</p>
 <p><strong>适用场景分析：</strong><br>HashMap和HashTable:HashMap去掉了HashTable的contains方法，但是加上了containsValue()和containsKey()方法。HashTable同步的，而HashMap是非同步的，效率上比HashTable要高。HashMap允许空键值，而HashTable不允许。</p>
